@@ -1,0 +1,34 @@
+html,body,#root,.app{
+    width: 100%;
+    height: 100%;
+}
+*{box-sizing: border-box;}
+.app{
+    .page{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0.49rem;
+        background: #f4f4f4;
+    }
+    .botNav{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.49rem;
+        border-top: 1px solid #d7d7d7;
+        display: flex;
+        a{
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.14rem;
+            color: #999;
+        }
+    }
+}
