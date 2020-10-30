@@ -17,11 +17,20 @@ export default [
     },
     {
         path: '/cart',
-        component: lazy(()=>import('../pages/Cart/root/cart'))
+        component: lazy(()=>import('../pages/Cart/root/cart')),
+        noCache: true
     },
     {
         path: '/mine',
         component: lazy(()=>import('../pages/Mine/root/mine'))
+    },
+    {
+        path: '/detail/:id',
+        component: lazy(()=>import('../pages/Detail/root/detail.jsx'))
+    },
+    {
+        path: '/login',
+        component: lazy(()=>import('../pages/Login/login'))
     },
     {
         path: '/404',

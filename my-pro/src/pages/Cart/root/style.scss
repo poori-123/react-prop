@@ -1,0 +1,182 @@
+.cart{
+    h1{
+        width: 100%;
+        height: 0.44rem;
+        border-bottom: 1px solid #d4d4d4;
+        line-height: 0.44rem;
+        text-align: center;
+        font-size: 0.16rem;
+        color: #333;
+    }
+    .cartList{
+        position: absolute;
+        top: 0.44rem;
+        bottom: 0.4rem;
+        width: 100%;
+        left: 0;
+        .list-item-wrap{
+            width: 100%;
+            height: 1rem;
+            position: relative;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        .del{
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: red;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 0.16rem;
+            color: #fff;
+            z-index: 1;
+        }
+        .list-item{
+            width: 100%;
+            padding: 0.1rem 0.1rem;
+            height: 1rem;
+            position: absolute;
+            background: #efefef;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            display: flex;
+            &.slide{
+                transition: 300ms;
+            }
+            .choose{
+                width: 0.2rem;
+                display: flex;
+                input{
+                    width: 0.15rem;
+                    height: 0.15rem;
+                    margin: auto;
+                }
+            }
+            .imgBox{
+                height: 100%;
+                width: 0.8rem;
+                background: #efefef;
+                margin-right: 0.1rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .info{
+                width: calc(100% - 1.1rem);
+                h3{
+                    font-size: 0.14rem;
+                    color: #333;
+                    line-height: 0.24rem;
+                    height: 0.24rem;
+                    font-weight: bold;
+                }
+                h4{
+                    height: 0.2rem;
+                    line-height: 0.2rem;
+                    font-size: 0.12rem;
+                    color: #666;
+                    display: flex;
+                    justify-content: space-between;
+                    .sku{
+                        width: 60%;
+                        span{
+                            margin-right: 0.1rem;
+                        }
+                    }
+                    .pri{
+                        width: 40%;
+                        font-size: 0.14rem;
+                        color: red;
+                    }
+                }
+                .count{
+                    display: flex;
+                    margin-top: 0.1rem;
+                    span{
+                        width: 0.25rem;
+                        height: 0.23rem;
+                        border: 1px solid #d4d4d4;
+                        text-align: center;
+                        line-height: 0.23rem;
+                        color: #666;
+                        font-size: 0.12rem;
+                        &.def{
+                            border-color: #eee;
+                            border-right-color: #d4d4d4;
+                            color: #bbb;
+                        }
+                    }
+                    p{
+                        width: 0.5rem;
+                        height: 0.23rem;
+                        line-height: 0.23rem;
+                        border-top: 1px solid #d4d4d4;
+                        border-bottom: 1px solid #d4d4d4;
+                        text-align: center;
+                        font-size: 0.12rem;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+    .buy{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.4rem;
+        padding: 0 0.1rem;
+        width: 100%;
+        border-top: 1px solid #d4d4d4;
+        display: flex;
+        .left{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            input{
+                width: 0.15rem;
+                height: 0.15rem;
+                margin-right: 0.1rem;
+            }
+        }
+        .mid{
+            width: 40%;
+            font-size: 0.14rem;
+            font-weight: bold;
+            line-height: 0.4rem;
+            color: red;
+        }
+        .right{
+            width: 40%;
+            height: 0.4rem;
+            display: flex;
+            span{
+                width: 75%;
+                height: 0.25rem;
+                line-height: 0.25rem;
+                background: red;
+                margin: auto;
+                text-align: center;
+                font-size: 0.14rem;
+                color: #fff;
+                border-radius: 0.05rem;
+            }
+        }
+    }
+    .goLogin{
+        display: block;
+        width: 1rem;
+        height: 0.3rem;
+        background: #fff;
+        font-size: 0.14rem;
+        text-align: center;
+        line-height: 0.3rem;
+        color: #666;
+        border: 0.01rem solid #d4d4d4;
+        margin: 2rem auto;
+    }
+}

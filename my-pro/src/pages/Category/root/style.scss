@@ -1,0 +1,167 @@
+.category{
+    .top{
+        border-bottom: 1px solid #d4d4d4;
+        padding-bottom: 0.05rem;
+        h1{
+            line-height: 0.44rem;
+            font-size: 0.16rem;
+            color: #333;
+            text-align: center;
+        }
+        .search{
+            width: 90%;
+            margin: 0 auto;
+            background: #EDEDED;
+            height: 0.36rem;
+            border-radius: 0.2rem;
+            display: flex;
+            align-items: center;
+            padding-left: 0.1rem;
+            overflow: hidden;
+            .iconfont{
+                font-size: 0.2rem;
+                color: #666;
+            }
+            input{
+                width: 40%;
+                transform: scale(2);
+                transform-origin: left center;
+                height: 36px;
+                line-height: 36px;
+                border: none;
+                padding-left: 10px;
+                font-size: 12px;
+                color: #666;
+                background: #EDEDED;
+                &::placeholder{
+                    color: #999;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .content{
+        position: absolute;
+        top: 0.85rem;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        .cates{
+            width: 1rem;
+            padding-top: 0.1rem;
+            height: 100%;
+            border-right: 1px solid #d4d4d4;
+            .scroll{
+                width: 100%;
+                height: 100%;
+            }
+            li{
+                width: 100%;
+                height: 0.4rem;
+                line-height: 0.4rem;
+                text-align: center;
+                font-size: 0.14rem;
+                color: #333;
+            }
+        }
+        .list{
+            width: calc(100% - 1rem);
+            height: 100%;
+            .scroll{
+                width: 100%;
+                height: 100%;
+            }
+            .cates-title{
+                width: 100%;
+                height: 0.6rem;
+                h3{
+                    line-height: 0.35rem;
+                    font-size: 0.16rem;
+                    color: #333;
+                    text-align: center;
+                }
+                h4{
+                    line-height: 0.2rem;
+                    font-size: 0.12rem;
+                    color: #999;
+                    text-align: center;
+                }
+            }
+            .cates-list{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .cates-list-item{
+                    width: 48%;
+                    margin: 0 1%;
+                    margin-bottom: 0.05rem;
+                    overflow: hidden;
+                    >img{
+                        width: 100%;
+                    }
+                    .prom{
+                        height: 0.3rem;
+                        position: relative;
+                        .left{
+                            width: 35%;
+                            height: 115%;
+                            position: absolute;
+                            top: -15%;
+                            left: 0;
+                            background-size: contain;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            span{
+                                font-size: 0.10rem;
+                                color: #fff;
+                            }
+                        }
+                        .right{
+                            position: absolute;
+                            z-index: -2;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            text-indent: 40%;
+                            font-size: 0.10rem;
+                            color: #fff;
+                            line-height: 0.3rem;
+                            overflow: hidden;
+                            img{
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                z-index: -1;
+                            }
+
+                        }
+                    }
+                    .simple{
+                        height: 0.3rem;
+                        width: 100%;
+                        background: #F1ECE2;
+                        font-size: 0.10rem;
+                        padding-left: 0.05rem;
+                        color: #9F8A60;
+                        line-height: 0.3rem;
+                        overflow: hidden;
+                    }
+                    h3{
+                        font-size: 0.12rem;
+                        color: #333;
+                        line-height: 0.2rem;
+                    }
+                    h4{
+                        font-size: 0.12rem;
+                        color: red;
+                        line-height: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
